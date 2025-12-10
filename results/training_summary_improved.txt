@@ -1,0 +1,30 @@
+============================================================
+IMPROVED SIGN LANGUAGE MODEL - TRAINING SUMMARY
+============================================================
+
+Configuration:
+  - Person-independent evaluation: Leave-One-User-Out CV
+  - Feature engineering: Normalized coords + angles + distances
+  - Total features: 97
+  - Total samples: 26036
+  - Number of users: 2
+  - Number of classes: 26
+
+Cross-Validation Results:
+  user  accuracy  precision   recall       f1
+dario3  0.794524   0.813219 0.794570 0.773696
+ toni2  0.937067   0.941084 0.937074 0.936472
+
+Aggregate Metrics (Mean ± Std):
+  Accuracy: 0.8658 ± 0.1008
+  Precision: 0.8772 ± 0.0904
+  Recall: 0.8658 ± 0.1008
+  F1: 0.8551 ± 0.1151
+
+Best Hyperparameters:
+  max_depth: 15
+  min_samples_leaf: 1
+  min_samples_split: 2
+  n_estimators: 400
+
+Best CV Score: 0.8770
